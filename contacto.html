@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fondo-girl.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto_style.css">
+    <link rel="stylesheet" href="css/commonstyle.css">
+    <title>QuienSoy</title>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <p> <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></p>
+            <ul class="nav">
+                <li>
+                    <a href="quiensoy.html">Quién soy</a>
+                </li>
+                <li>
+                    <a href="cv.html">CV</a>
+                </li>
+                <li class="dropdown">
+                    <a>Proyectos</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="frontend.html">FrontEnd</a>
+                        </li>
+                        <li>
+                            <a href="backend.html">BackEnd</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="form col-6 col-s-11">
+            <form name="Formulario" method="post" action="mailto:cristinaalvarez712@gmail.com">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <ul>
+                        <br>
+                        <li><label>Nombre</label><input type="text" required></li>
+                        <li><label>Apellidos</label><input type="text" required></li>
+                        <li><label>Móvil</label><input type="tel" minlength="9"></li>
+                        <li><label>Email</label><input type="email" required></li>
+                        <li><label>Empresa</label><input type="text"></li>
+                        <li><label>Asunto</label><select name="Razón de contacto" required>
+                                <option value="1"></option>
+                                <option value="2">Empleo</option>
+                                <option value="3">Proyecto puntual</option>
+                                <option value="4">Asesoramiento</option>
+                            </select></li>
+                        <li><label>Mensaje</label><textarea name="Comentarios" id="" cols="30" rows="10"
+                                placeholder="Máximo 600 caracteres." minlength="5" maxlength="600"></textarea></li>
+                        <li><label>Limpiar</label><input type="reset"></li>
+                        <li><label>Enviar</label><input type="image" src="img/enviar.png"></li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-5 col-s-12"></div>
+        <footer class="RRSS">
+            <a href="mailto:cristinaalvarez712@gmail.com" target="_blank"><img src="img/mail-outline.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/cristinaalvarez93/" target="_blank"><img src="img/logo-linkedin.svg"
+                    alt=""></a>
+            <a href="https://github.com/criisap?tab=repositories" target="_blank"><img src="img/logo-github.svg"
+                    alt=""></a>
+        </footer>
+        <p></p>
+        </div>
+</body>
+
+</html>

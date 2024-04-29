@@ -1,0 +1,54 @@
+.form {
+  font-weight: bold;
+  font-size: 15px;
+  align-items: center;
+}
+fieldset {
+  height: 405px;
+  width: 470px;
+  border-color: rgb(150, 103, 193);
+  padding-left: 0.8rem;
+  padding-right: 0.5rem;
+}
+legend {
+  color: yellow;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form ul {
+  list-style: none;
+}
+.form ul li label {
+  width: 180px;
+  float: left; /* El contenido se dispone en el lado izquierdo del bloque. */
+  text-align: left;
+}
+/* Al poner que el tipo de contenido al que queremos darle estilo es una imagen, coge solo la imagen
+dentro de estas etiquetas from, ul, li: */
+.form ul li [type="image"] {
+  background-size: cover;
+  width: 35px;
+  height: 30px;
+}
+@media screen and (min-height: 768px) {
+  form {
+    padding-left: 70vh;
+  }
+}
+@media screen and (max-width: 1043px) {
+  form {
+    padding-left: 35vh;
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  form {
+    padding-left: 6vh;
+    font-size: 2vh;
+  }
+}
+@media screen and (max-width: 1043px) {
+  fieldset {
+    font-size: 1.6vh;
+  }
+}

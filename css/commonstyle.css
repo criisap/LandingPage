@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  /*Esto se aplica a todo el documento*/
+  font-family: "Kode Mono", monospace;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*Para que se ajuste a la caja*/
+}
+body {
+  background: rgb(229, 166, 214);
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  justify-content: space-between;
+}
+.navbar img.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+}
+.navbar ul {
+  align-items: center;
+}
+.nav > li {
+  /*Indicamos que los elem directos li que están en nav, tengan las siguientes características*/
+  float: left;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: yellow;
+}
+.nav li {
+  display: flex; /* El contenedor se comporta como un bloque, ocupa todo el espacio horizontal
+  y con la siguiente característica se dispondrán en fila. */
+  flex-direction: row;
+  list-style: none;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgb(150, 103, 193);
+  width: 12em;
+  margin-right: 1pc;
+  margin-left: 1pc;
+  margin-top: 0.5em;
+  text-align: center;
+}
+.nav li:hover {
+  cursor: pointer;
+  background-color: black;
+  color: yellow;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f900;
+  min-width: 200px;
+  z-index: 1;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.dropdown-content li {
+  margin: 2.5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.imgBox img {
+  border-radius: 50%;
+  width: 750px;
+  height: 720px;
+  top: 90px;
+  right: 0;
+  z-index: -1; /* Esto sirve para que la imagen esté por encima de otro contenido. */
+  position: absolute;
+}
+.RRSS {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.RRSS img {
+  height: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-height: 768px) {
+  .navbar img {
+    padding: 10px;
+  }
+}

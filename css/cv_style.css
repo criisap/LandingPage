@@ -1,0 +1,60 @@
+.container2 .cv {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+.cv .icono {
+  width: 3vh;
+  height: 3vh;
+}
+.dev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+[class*="col-"] {
+  width: 100%;
+  padding: 60px;
+  float: left; /*Elementos flotantes que se pegan siempre a la izquierda*/
+}
+.container2 p:nth-of-type(2n-1) {
+  font-weight: bold; /* Marca en negrita los párrafos impares */
+  color: pink;
+  mix-blend-mode: difference; /* Esta propiedad cambia el color del text en función del fondo, para que sea visible */
+}
+.container2 p {
+  color: pink;
+  mix-blend-mode: difference; /* Esta propiedad cambia el color del text en función del fondo, para que sea visible */
+}
+@media screen and (max-width: 480px) {
+  .container2 .cv {
+    padding: 2rem 15px; /* Usando px para mantener un mínimo de espacio lateral en pantallas muy pequeñas */
+  }
+}
+@media screen and (max-width: 768px) {
+  .container2 .cv {
+    padding-left: 0.5rem 4%;
+    padding-right: 0.5rem 4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dev img {
+    margin: 1rem;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dev img {
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dev img {
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 80px;
+  }
+}
